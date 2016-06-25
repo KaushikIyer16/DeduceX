@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="username"
+        android:title="Username "
+        android:summary="that will be displayed in the game"
+        />
+    <ListPreference
+        android:key="word_size"
+        android:title="Word Size "
+        android:summary="that has to be deduced"
+        android:dialogTitle="Please select a word size"
+        android:entries="@array/number_of_words"
+        android:entryValues="@array/number_of_words_values"
+        android:defaultValue="4"
+        />
+</PreferenceScreen>

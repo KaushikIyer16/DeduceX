@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/turnStatus" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:id="@+id/edit_Text"
+            android:inputType="text"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_submit"
+            android:layout_marginTop="24dp"
+            android:onClick="btnClick"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:src="@drawable/fab_send"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="HIT COUNT"
+            android:textColor="#FFC7262E"
+            android:visibility="invisible"
+            android:id="@+id/hit_count_label"
+            android:textSize="20dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="invisible"
+            android:id="@+id/hit_count"
+            android:src="@drawable/number_0"/>
+    </LinearLayout>
+
+
+</FrameLayout>
